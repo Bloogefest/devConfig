@@ -1,4 +1,4 @@
-package dev.config.annotations;
+package dev.config.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,7 +9,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 public @interface Property {
     String value() default "";
+
     boolean optional() default false;
-    boolean nullable() default false;
-    Save save() default @Save;
 }
